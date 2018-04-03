@@ -51,10 +51,6 @@ class ListActivity : NucleusAppCompatActivity<ListPresenter>() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
-            R.id.menu_search -> {
-                Snackbar.make(findViewById(android.R.id.content), "This feature is coming soon", Snackbar.LENGTH_SHORT).show()
-                true
-            }
             R.id.menu_location -> {
                 showLocationDialog()
                 true
