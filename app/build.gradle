@@ -47,7 +47,7 @@ android {
             dimension "api"
         }
     }
-    buildToolsVersion '26.0.2'
+    buildToolsVersion '27.0.3'
     compileOptions {
         targetCompatibility 1.8
         sourceCompatibility 1.8
@@ -75,7 +75,7 @@ dependencies {
     // Dagger
     implementation dagger
     annotationProcessor daggerApt
-    provided jsr250
+    compileOnly jsr250
 
     // MVP
     implementation (nucleus) {
